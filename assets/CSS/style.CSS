@@ -1,0 +1,73 @@
+.container{
+   display: flex;
+   flex-flow: row;
+   justify-content: center,space-between;
+   align-items: center;
+
+   font-size: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+   color: azure;
+   text-align: justify;
+}
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: blueviolet;
+}
+
+body{
+    background-color:rgb(43, 44, 56);
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#menu li a{
+    text-decoration:dotted;
+    color: aliceblue;
+
+}
+
+#menu li a:hover{
+    color:blueviolet
+}
+
+.p-30{
+    padding: 20px;
+    
+}
+
+.bordas{
+    border-radius: 30px;
+}
+
+
+h2{
+    display: flex;
+    justify-content: center ;
+    color: blueviolet;
+    padding-top: 25px;
+}
+
+.v1{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    color:aliceblue;
+    
+}
+
+.tm-social{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
