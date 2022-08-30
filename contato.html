@@ -22,31 +22,32 @@
 
     </ul>
 
-   
+
 
     <div class="container">
 
         <div>
-           
+
             <forms>
-                <label for="nome"> Nome :</label>
-                <input type="text" id="nome">
+                <label for="nome"> Nome:</label>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <BR>
-                <BR>
-                <label for="email"> Email :</label>
-                <input type="email" id="email">
-                <br>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <BR>
                 <label for="assunto"> Assunto :</label> <BR>
-                <textarea name="assunto" id="assunto" rows="10" cols="50"></textarea>
+                <textarea name="assunto" id="assunto" rows="10" cols="50" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
-                <button>ENVIAR</button>
+                <button onclick="enviar() ">ENVIAR</button>
             </forms>
 
         </div>
 
         <div class="ml-50">
-          
+
 
             <p> Armazen 10, Av. Alfredo Lisboa, s/n </p>
 
@@ -55,25 +56,28 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4030838444087!2d-34.872187985220144!3d-8.06030209419637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a24fe6ec27%3A0xbf67f7d56acfbd5d!2sCentro%20Cultural%20Cais%20do%20Sert%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1661205707067!5m2!1spt-BR!2sbr"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
 
         </div>
     </div>
 
 
 
+
+    <hr>
+    <FOOter>
+        <DIV class="container">
+
+            <a href="https://www.linkedin.com/" target="_blank"> <img class="tm-social" src="assets/img/linkedin.png"
+                    alt="logo linkedin"></a>
+            <a href="https://github.com/" target="_blank"><img class="tm-social" src="assets/img/github.png"
+                    alt="logo do github "></a>
+
+        </DIV>
+        Todos direitos reservados: &copy Elis Cavalcante
+    </FOOter>
+
+    <script src="assets/JS/js.js"></script>
 </body>
-<hr>
-<FOOter>
-    <DIV class="container">
-
-        <a href="https://www.linkedin.com/" target="_blank"> <img class="tm-social" src="assets/img/linkedin.png"
-                alt="logo linkedin"></a>
-        <a href="https://github.com/" target="_blank"><img class="tm-social" src="assets/img/placa-do-github.png"
-                alt="logo do github "></a>
-
-    </DIV>
-    Todos direitos reservados: &copy Elis Cavalcante
-</FOOter>
 
 </html>
